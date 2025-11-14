@@ -1,12 +1,14 @@
 {% extends "layout.html" %}
 
 {% block title %}All Chai Varieties{% endblock %}  
-{% block  %}
+{% block content %}
+<div class="grid grid-cols-3 gap-4 m-4">
 {% for chai in chai_list %}
 <div class="chai-item">
     
-    <img src="{{ chai.image.url }}" alt="{{ chai.name }}" width="300">
+    <img class=rounded src="{{ chai.image.url }}" alt="{{ chai.name }}" width="300">
 </div>
 {% endfor %}
+</div>
 {% endblock  %}
 

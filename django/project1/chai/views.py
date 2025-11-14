@@ -5,7 +5,7 @@ from .models import chaiVariety
 # Create your views here.
 def chai(request):
     chai_list = chaiVariety.objects.all()
-    return render(request, 'layout.html', {'chai_list': chai_list})
+    return render(request, 'all_chai.html', {'chai_list': chai_list})
 def about(request):
     return HttpResponse("Hello,You are at Django about page.")
 
