@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block title %}All Chai Varieties{% endblock %}  
+{% block  %}
+{% for chai in chai_list %}
+<div class="chai-item">
+    
+    <img src="{{ chai.image.url }}" alt="{{ chai.name }}" width="300">
+</div>
+{% endfor %}
+{% endblock  %}
+
